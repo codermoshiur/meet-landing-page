@@ -1,0 +1,22 @@
+@use "../utilities/colors" as *;
+@use "../content/typography" as *;
+@mixin btn-default {
+  font-family: $font-secondary;
+  color: $clr-white;
+  background-color: $clr-spinel-stone-black;
+  display: inline-block;
+  border-radius: 1.875rem;
+  padding: 1rem 2.5rem;
+}
+@mixin btn-bg-acapulco-cliffs {
+  background-color: $clr-acapulco-cliffs;
+}
+@mixin btn-bg-lusty-lavender {
+  background-color: $clr-lusty-lavender;
+}
+
+@mixin hover-active {
+  &:is(:hover, :active) {
+    @content;
+  }
+}

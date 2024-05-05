@@ -1,0 +1,222 @@
+@use "./content" as *;
+@use "./layout" as *;
+@use "./components" as *;
+@use "./utilities" as *;
+@font-face {
+  src: url(../fonts/RedHatDisplay-Black.ttf);
+  font-family: RedHatDisplay-Black;
+  font-weight: 900;
+}
+@font-face {
+  src: url(../fonts/RedHatDisplay-Medium.ttf);
+  font-family: RedHatDisplay-Medium;
+  font-weight: 500;
+}
+@include reset;
+body {
+  color: $clr-mandrake;
+  font-family: $font-primary;
+  line-height: 1.625rem;
+  background-color: $clr-dr-white;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  min-height: 8.125rem;
+  @include tablet {
+    min-height: 8.75rem;
+  }
+  @include header-grid;
+  &__section {
+    @include desktop {
+      @include section-max-width;
+    }
+  }
+}
+.main {
+  @include main-grid;
+  &__section {
+    @include main-section-grid;
+    &__hero {
+      overflow: hidden;
+      @include main-section-hero-grid;
+      &__image {
+        &--left,
+        &--right {
+          padding: 1rem 0;
+          transform: scale(1.1);
+          @include laptop {
+            padding: 2rem 0;
+            transform: scale(1.2);
+          }
+        }
+        &--right {
+          display: none;
+          @include laptop {
+            display: block;
+          }
+        }
+      }
+      &__content {
+        padding: 0 1.5rem;
+        text-align: center;
+        @include mobile-landscape {
+          max-width: 28.5625rem;
+          margin-inline: auto;
+        }
+        &__title {
+          @include display-1;
+        }
+        &__description {
+          margin-top: 1.5rem;
+          margin-bottom: 2rem;
+        }
+        &__button {
+          @include main-section-hero-content-button-flex;
+          &__first,
+          &__second {
+            @include btn-default;
+          }
+          &__first {
+            &--acapulco-cliffs {
+              @include btn-bg-acapulco-cliffs;
+              @include hover-active {
+                background-color: lighten($clr-acapulco-cliffs, 10%);
+              }
+            }
+            &__version {
+              color: $clr-silverpine-cyan;
+            }
+          }
+          &__second {
+            &--lusty-lavender {
+              @include btn-bg-lusty-lavender;
+              @include hover-active {
+                background-color: darken($clr-lavender-fragrance, 10%);
+              }
+            }
+          }
+        }
+      }
+    }
+    &__meetings {
+      text-align: center;
+      @include main-seection-meetings-grid;
+      padding: 0 1.5rem;
+      @include desktop {
+        @include section-max-width;
+        padding: 0;
+      }
+      &__circle-with-text {
+        @include circle-with-text;
+      }
+      &__gallery {
+        @include main-section-meetings-gallery-grid;
+        &__figure__image {
+          border-radius: 0.5rem;
+        }
+      }
+      &__content {
+        @include mobile-landscape {
+          max-width: 33.75rem;
+          margin-inline: auto;
+        }
+        @include main-section-meetings-content-grid;
+        &__subtitle {
+          letter-spacing: 0.25rem;
+          color: $clr-acapulco-cliffs;
+          text-transform: uppercase;
+          font-family: $font-secondary;
+        }
+        &__title {
+          @include display-2;
+        }
+      }
+    }
+    &__sessions {
+      &__circle-with-text {
+        margin-bottom: -1.75rem;
+        @include circle-with-text;
+        &--bg-white {
+          background-color: $clr-white;
+        }
+      }
+      &__content {
+        background: linear-gradient(
+            $clr-acapulco-cliffs-with-alpha,
+            $clr-acapulco-cliffs-with-alpha
+          ),
+          url(../images/mobile/image-footer.jpg);
+        @include tablet {
+          background: linear-gradient(
+              $clr-acapulco-cliffs-with-alpha,
+              $clr-acapulco-cliffs-with-alpha
+            ),
+            url(../images/tablet/image-footer.jpg);
+          background-size: 100%;
+        }
+        @include laptop {
+          background: linear-gradient(
+              $clr-acapulco-cliffs-with-alpha,
+              $clr-acapulco-cliffs-with-alpha
+            ),
+            url(../images/desktop/image-footer.jpg);
+          text-align: left;
+        }
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 5.75rem 1.5rem 4.5rem;
+        &__box {
+          text-align: center;
+          @include main-section-sessions-content-grid;
+          @include laptop {
+            @include section-max-width;
+            text-align: left;
+          }
+          &__title {
+            @include display-2;
+            &--clr-dr-white {
+              color: $clr-dr-white;
+            }
+          }
+          &__description {
+            @include mobile-landscape {
+              max-width: 33.75rem;
+            }
+            &--font-size {
+              font-size: 1.125rem;
+            }
+            &--clr-dr-white {
+              color: $clr-dr-white;
+            }
+          }
+          &__button {
+            &__link {
+              @include btn-default;
+              @include btn-bg-lusty-lavender;
+              &__version {
+                color: darken($clr-white, 20%);
+              }
+              @include hover-active {
+                background-color: darken($clr-lavender-fragrance, 10%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 4.8rem 1.5rem;
+  &__section {
+    @include section-max-width;
+    &__attribution__link:is(:link, :visited) {
+      color: $clr-acapulco-cliffs;
+    }
+    &__attribution__link:is(:hover, :active) {
+      color: $clr-spinel-stone-black;
+    }
+  }
+}

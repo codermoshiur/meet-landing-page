@@ -1,0 +1,20 @@
+@mixin desktop {
+  @media screen and (min-width: 80.0625rem) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 64.0625rem) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 48rem) {
+    @content;
+  }
+}
+@mixin mobile-landscape {
+  @media screen and (min-width: 30.0625rem) {
+    @content;
+  }
+}

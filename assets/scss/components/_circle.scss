@@ -1,0 +1,23 @@
+@use "../content/typography" as *;
+@use "../utilities/colors" as *;
+@use "../utilities/flex" as *;
+@mixin circle-with-text {
+  font-family: $font-secondary;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.0625rem solid $clr-mandrake;
+  border-radius: 1.8125rem;
+  @include circle-with-text-flex;
+  position: relative;
+  margin-top: 9.4375rem;
+  margin-inline: auto;
+  &::before {
+    content: "";
+    display: block;
+    height: 5.4375rem;
+    width: 0.0625rem;
+    background: $clr-mandrake;
+    position: absolute;
+    bottom: 100%;
+  }
+}

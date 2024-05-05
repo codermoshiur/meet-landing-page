@@ -1,0 +1,11 @@
+@mixin main-section-hero-content-button-flex {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@mixin circle-with-text-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

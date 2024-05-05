@@ -1,4 +1,4 @@
-# Frontend Mentor - Challange name
+# Frontend Mentor - Meet landing page
 
 ## Overview
 
@@ -6,11 +6,7 @@
 
 #### Desktop
 
-![](Screenshot)
-
-#### Mobile
-
-![](Screenshot)
+![](./design/desktop.png)
 
 ### Links
 
@@ -22,8 +18,8 @@
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
 
 ## Author

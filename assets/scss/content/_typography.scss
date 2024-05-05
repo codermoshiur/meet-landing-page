@@ -1,0 +1,20 @@
+@use "../utilities/colors" as *;
+@use "../layout/breakpoints" as *;
+$font-primary: "RedHatDisplay-Medium", sans-serif;
+$font-secondary: "RedHatDisplay-Black", sans-serif;
+@mixin display-1 {
+  color: $clr-spinel-stone-black;
+  font-family: $font-secondary;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  @include desktop {
+    font-size: 4rem;
+    line-height: 1;
+  }
+}
+@mixin display-2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-family: $font-secondary;
+  color: $clr-spinel-stone-black;
+}

@@ -3,21 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Challange name</title>
+    <title>Meet landing page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="shortcut icon"
       href="./assets/images/favicon-32x32.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://codersfoundation.com?ref=challenge">Moshiur</a>.
-    </div>
+    <header class="header">
+      <div class="header__section">
+        <a href="/" class="header__section__logo-link">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Meet"
+            class="header__section__logo-image"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__section">
+        <section class="main__section__hero">
+          <picture
+            class="main__section__hero__image main__section__hero__image--left"
+          >
+            <source
+              srcset="./assets/images/desktop/image-hero-left.png"
+              media="(min-width: 64.0625rem)"
+            />
+            <img
+              src="./assets/images/tablet/image-hero.png"
+              alt="Group Chat
+              for Everyone"
+            />
+          </picture>
+          <div class="main__section__hero__content">
+            <h1 class="main__section__hero__content__title">
+              Group Chat for Everyone
+            </h1>
+            <p class="main__section__hero__content__description">
+              Meet makes it easy to connect with others face-to-face virtually
+              and collaborate across any device.
+            </p>
+            <div class="main__section__hero__content__button">
+              <a
+                href="/"
+                class="main__section__hero__content__button__first main__section__hero__content__button__first--acapulco-cliffs"
+                >Download
+                <span
+                  class="main__section__hero__content__button__first__version"
+                  >v1.3</span
+                ></a
+              >
+              <a
+                href="/"
+                class="main__section__hero__content__button__second main__section__hero__content__button__second--lusty-lavender"
+                >What is it?</a
+              >
+            </div>
+          </div>
+          <picture
+            class="main__section__hero__image main__section__hero__image--right"
+          >
+            <source
+              srcset="./assets/images/desktop/image-hero-right.png"
+              media="(min-width: 64.0625rem)"
+            />
+            <img
+              src="./assets/images/tablet/image-hero.png"
+              alt="Group Chat
+              for Everyone"
+            />
+          </picture>
+        </section>
+        <section class="main__section__meetings">
+          <div class="main__section__meetings__circle-with-text">01</div>
+          <div class="main__section__meetings__gallery">
+            <figure class="main__section__meetings__gallery__figure">
+              <img
+                src="./assets/images/desktop/image-woman-in-videocall.jpg"
+                alt="Videocall"
+                class="main__section__meetings__gallery__figure__image"
+              />
+            </figure>
+            <figure class="main__section__meetings__gallery__figure">
+              <img
+                src="./assets/images/desktop/image-women-videochatting.jpg"
+                alt="Videochatting"
+                class="main__section__meetings__gallery__figure__image"
+              />
+            </figure>
+            <figure class="main__section__meetings__gallery__figure">
+              <img
+                src="./assets/images/desktop/image-men-in-meeting.jpg"
+                alt="Meeting"
+                class="main__section__meetings__gallery__figure__image"
+              />
+            </figure>
+            <figure class="main__section__meetings__gallery__figure">
+              <img
+                src="./assets/images/desktop/image-man-texting.jpg"
+                alt="Texting"
+                class="main__section__meetings__gallery__figure__image"
+              />
+            </figure>
+          </div>
+          <div class="main__section__meetings__content">
+            <p class="main__section__meetings__content__subtitle">
+              built for modern use
+            </p>
+            <h2 class="main__section__meetings__content__title">
+              Smarter meetings, all in one place
+            </h2>
+            <p class="main__section__meetings__content__description">
+              Send messages, share files, show your screen, and record your
+              meetings — all in one workspace. Control who can join with
+              invite-only team access, data encryption, and data export.
+            </p>
+          </div>
+        </section>
+        <section class="main__section__sessions">
+          <div
+            class="main__section__sessions__circle-with-text main__section__sessions__circle-with-text--bg-white"
+          >
+            02
+          </div>
+          <div class="main__section__sessions__content">
+            <div class="main__section__sessions__content__box">
+              <h2
+                class="main__section__sessions__content__box__title main__section__sessions__content__box__title--clr-dr-white"
+              >
+                Experience more together
+              </h2>
+              <p
+                class="main__section__sessions__content__box__description main__section__sessions__content__box__description--font-size main__section__sessions__content__box__description--clr-dr-white"
+              >
+                Stay connected with reliable HD meetings and unlimited
+                one-on-one and group video sessions.
+              </p>
+              <div class="main__section__sessions__content__box__button">
+                <a
+                  href="/"
+                  class="main__section__sessions__content__box__button__link"
+                  >Download
+                  <span
+                    class="main__section__sessions__content__box__button__link__version"
+                    >v1.3</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__section">
+        <div class="footer__section__attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="footer__section__attribution__link"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://codersfoundation.com?ref=challenge"
+            class="footer__section__attribution__link"
+            >Moshiur</a
+          >.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

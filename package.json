@@ -1,0 +1,16 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass:compile": "sass ./assets/scss/style.scss ./assets/css/style.css",
+    "sass:watch": "sass ./assets/scss/style.scss ./assets/css/style.css -w"
+  },
+  "keywords": [],
+  "author": "Moshiur",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.76.0"
+  }
+}

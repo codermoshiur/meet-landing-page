@@ -1,0 +1,54 @@
+@use "./breakpoints" as *;
+%grid-one-column {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 4rem;
+}
+@mixin header-grid {
+  @extend %grid-one-column;
+  align-items: center;
+}
+@mixin main-grid {
+  @extend %grid-one-column;
+}
+@mixin main-section-grid {
+  @extend %grid-one-column;
+}
+@mixin main-section-hero-grid {
+  @extend %grid-one-column;
+  gap: 4.5rem;
+  @include laptop {
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    gap: 3.5rem;
+  }
+  @include desktop {
+    gap: 5.5rem;
+  }
+}
+@mixin main-seection-meetings-grid {
+  @extend %grid-one-column;
+}
+@mixin main-section-meetings-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5625rem;
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@mixin main-section-meetings-content-grid {
+  @extend %grid-one-column;
+  gap: 1.5rem;
+}
+
+@mixin main-section-sessions-content-grid {
+  @extend %grid-one-column;
+  gap: 2rem;
+  @include laptop {
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    gap: 5.75rem;
+  }
+}
