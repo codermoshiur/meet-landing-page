@@ -5,7 +5,7 @@
   font-family: $font-secondary;
   width: 3.5rem;
   height: 3.5rem;
-  border: 0.0625rem solid $clr-mandrake;
+  border: 0.0625rem solid $clr-kingly-cloud;
   border-radius: 1.8125rem;
   @include circle-with-text-flex;
   position: relative;
@@ -16,7 +16,7 @@
     display: block;
     height: 5.4375rem;
     width: 0.0625rem;
-    background: $clr-mandrake;
+    background: $clr-kingly-cloud;
     position: absolute;
     bottom: 100%;
   }
