@@ -11,7 +11,7 @@
 ### Links
 
 - Solution URL: []()
-- Live Site URL: []()
+- Live Site URL: [https://codermoshiur.github.io/meet-landing-page/](https://codermoshiur.github.io/meet-landing-page/)
 
 ## My process
 
@@ -20,7 +20,7 @@
 - Semantic HTML5 markup
 - CSS Grid
 - CSS Flexbox
-- Mobile-first workflow
+- Sass
 
 ## Author
 
