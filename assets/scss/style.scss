@@ -37,22 +37,23 @@ body {
   &__section {
     @include main-section-grid;
     &__hero {
-      overflow: hidden;
       @include main-section-hero-grid;
       &__image {
-        &--left,
-        &--right {
-          padding: 1rem 0;
-          transform: scale(1.1);
+        min-width: 110%;
+        transform: translateX(-1.5625rem);
+        @include tablet {
+          transform: translateX(0);
+        }
+        &--left {
           @include laptop {
-            padding: 2rem 0;
-            transform: scale(1.2);
+            transform: translateX(-1.5625rem);
           }
         }
         &--right {
           display: none;
           @include laptop {
             display: block;
+            transform: translateX(1.5625rem);
           }
         }
       }
