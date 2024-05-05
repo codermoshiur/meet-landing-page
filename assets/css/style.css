@@ -342,10 +342,10 @@ body {
   margin-inline: auto;
 }
 .footer__section__attribution__link:is(:link, :visited) {
-  color: #4d96a9;
+  color: #28283d;
 }
 .footer__section__attribution__link:is(:hover, :active) {
-  color: #28283d;
+  color: #4d96a9;
 }
 
 /*# sourceMappingURL=style.css.map */

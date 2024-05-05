@@ -213,10 +213,10 @@ body {
   &__section {
     @include section-max-width;
     &__attribution__link:is(:link, :visited) {
-      color: $clr-acapulco-cliffs;
+      color: $clr-spinel-stone-black;
     }
     &__attribution__link:is(:hover, :active) {
-      color: $clr-spinel-stone-black;
+      color: $clr-acapulco-cliffs;
     }
   }
 }
