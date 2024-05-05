@@ -101,7 +101,6 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .main__section__hero__image {
-    min-width: 100%;
     transform: translateX(0);
   }
 }

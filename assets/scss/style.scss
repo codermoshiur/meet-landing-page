@@ -41,9 +41,10 @@ body {
       @include main-section-hero-grid;
       &__image {
         min-width: 110%;
+        @include desktop {
+        }
         transform: translateX(-1.5625rem);
         @include tablet {
-          min-width: 100%;
           transform: translateX(0);
         }
         &--left {
