@@ -80,6 +80,7 @@ body {
 }
 
 .main__section__hero {
+  overflow: hidden;
   gap: 4.5rem;
 }
 @media screen and (min-width: 64.0625rem) {
@@ -100,6 +101,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .main__section__hero__image {
+    min-width: 100%;
     transform: translateX(0);
   }
 }
