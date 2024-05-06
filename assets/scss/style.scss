@@ -33,19 +33,14 @@ body {
   }
 }
 .main {
-  @include main-grid;
   &__section {
-    @include main-section-grid;
     &__hero {
       overflow: hidden;
       @include main-section-hero-grid;
       &__image {
-        min-width: 110%;
-        @include desktop {
-        }
-        transform: translateX(-1.5625rem);
+        transform: scale(1.1);
+        padding: 2rem 0;
         @include tablet {
-          transform: translateX(0);
         }
         &--left {
           @include laptop {
@@ -156,7 +151,6 @@ body {
               $clr-acapulco-cliffs-with-alpha
             ),
             url(../images/tablet/image-footer.jpg);
-          background-size: 100%;
         }
         @include laptop {
           background: linear-gradient(

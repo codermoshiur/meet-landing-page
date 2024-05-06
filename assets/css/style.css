@@ -1,4 +1,4 @@
-.header, .main, .main__section, .main__section__hero, .main__section__meetings, .main__section__meetings__content, .main__section__sessions__content__box {
+.header, .main__section__hero, .main__section__meetings, .main__section__meetings__content, .main__section__sessions__content__box {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
@@ -96,13 +96,8 @@ body {
   }
 }
 .main__section__hero__image {
-  min-width: 110%;
-  transform: translateX(-1.5625rem);
-}
-@media screen and (min-width: 48rem) {
-  .main__section__hero__image {
-    transform: translateX(0);
-  }
+  transform: scale(1.1);
+  padding: 2rem 0;
 }
 @media screen and (min-width: 64.0625rem) {
   .main__section__hero__image--left {
@@ -275,7 +270,6 @@ body {
 @media screen and (min-width: 48rem) {
   .main__section__sessions__content {
     background: linear-gradient(rgba(77, 150, 169, 0.85), rgba(77, 150, 169, 0.85)), url(../images/tablet/image-footer.jpg);
-    background-size: 100%;
   }
 }
 @media screen and (min-width: 64.0625rem) {
